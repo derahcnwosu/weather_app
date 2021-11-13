@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+  /* font-size: 1rem; */
+  line-height: 1.4;
+}
+
+/* UTILITY CLASSES */
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* max-width: 1100px; */
+  /* margin: auto; */
+}
+.small-head{
+  font-size: 0.9rem;
+}
+
+
+/* WEATHER-CARD */
+.weather-card {
+  margin-top: 2rem;
+  background: rgb(58, 182, 231);
+  width: 400px;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.w-info{
+  margin-top: 1rem;
+}
+#weather-details {
+  list-style: none;
+  background: #fff;
+  color: #444;
+  margin-top: 1rem;
+  /* padding: 1rem; */
+}
+#weather-details li{
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.loc-change{
+  margin-top: 1rem;
+  background: rgb(72, 168, 206);
+  color: #fff;
+  border: 1px solid rgb(72, 168, 206);
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+}
+
+#cloud-img{
+  width: 100px;
+}
+
+
+/* LOCATION CHANGE FORM */
+
+#loc-form{
+  background: #ddd;
+  width: 350px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 63%;
+  transition: all 1s ease-in-out;
+  transform: translateY(-300px);
+  animation: locationForm 1s ease-in-out 0s forwards;
+  display: none;
+}
+
+@keyframes locationForm {
+  to{
+    transform: translateY(0);
+  }
+}
+
+
+.form-group input{
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 0.5rem ;
+}
+.form-group label{
+  display: block;
+  margin-bottom: 0.5rem ;
+}
+
+.form-buttons{
+  display: flex;
+  justify-content: right;
+  margin-top: 0.5rem;
+}
+.form-btn{
+  margin-left: 0.5rem;
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+  border: none;
+}
+.save{
+  background: rgb(72, 168, 206);
+}

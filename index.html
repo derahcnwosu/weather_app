@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WeatherJS</title>
+
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card">
+      <div class="w-info">
+        <h3 class="w-location"></h3>
+        <h3 class="w-desc"></h3>
+        <h3 class="w-degree"></h3>
+        <img id= "cloud-img">
+      </div>
+
+    <ul id="weather-details">
+      <li><h3 class="humidity small-head"></h3></li>
+      <li><h3 class="feels-like small-head"></h3></li>
+      <li><h3 class="wind small-head"></h3></li>
+    </ul>
+
+    <!-- <hr> -->
+    <button class="loc-change">Change Location</button>
+    
+    </div>
+
+
+  </div>
+  <div class="container">
+    <form id="loc-form">
+      <h3>Location</h3>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="Enter your city">
+      </div>
+      <!-- <div class="form-group">
+        <label for="state">State</label>
+        <input type="text" name="state" id="state" placeholder="Enter your state">
+      </div> -->
+
+      <div class="form-buttons">
+        <button class="form-btn close">Close</button>
+        <button class="form-btn save">Save Changes</button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+
+  
+
+
+  <script src="weather.js"></script>
+  <script src="ui.js"></script>
+  <script src="storage.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
